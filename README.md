@@ -16,3 +16,19 @@ This repository is the implementation and the related datasets of our paper `KAM
 ### Abstract
 
 2D LiDAR is an efficient alternative sensor for vehicle detection, which is one of the most critical tasks in autonomous driving. Compared to the fully-developed 3D LiDAR vehicle detection, 2D LiDAR vehicle detection has much room to improve. Most existing state-of-the-art works represent 2D point clouds as pseudo-images and then perform detection with traditional object detectors on 2D images. However, they ignore the sparse representation and geometric information of vehicles in the 2D cloud points. In this paper, we present Keypoint-Aware and Keypoint-Matching Network termed as KAM-Net, specifically focuses on better detecting the vehicles by explicitly capturing and extracting the sparse information of L-shape in 2D LiDAR point clouds. The whole framework consists of two stages, namely keypoint-aware stage and keypoint-matching stage. The keypoint-aware stage utilizes the heatmap and edge extraction module to simultaneously predict the position of L-shaped keypoints and inflection offset of L-shaped endpoints. The keypoint-matching stage is followed to group the keypoints and produce the oriented bounding boxes with axis by utilizing the endpoint-matching and Lshaped-matching methods. Further, we conduct extensive experiments on a recently released public dataset to evaluate the effectiveness of our approach. The results show that our KAM-Net achieves a new state-of-the-art performance.
+
+<img src="./figs/Net_v7.png" alt="frame_work" style="zoom:30%;" />
+
+### Dataset
+
+#### Data Release
+
+Our dataset is proposed by [Chen et al.](https://github.com/ispc-lab/2DLiDAR-VehicleDetection). <br>
+You can get our data at Baiduyun Cloud URL: https://pan.baidu.com/s/1nYYVnSxpRYbd9iFPTO7kog  Keywords: 4fa0
+
+<img src="./figs/dataset_demov2.png" alt="dataset_demov2" style="zoom:30%;" />
+
+### Usage
+
+You can access the [`tools` README.md](./tools) 
+
